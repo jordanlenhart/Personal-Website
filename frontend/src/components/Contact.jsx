@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { createClient } from "@supabase/supabase-js";
 
-// ⬇️ Replace with your Supabase project details
 const supabase = createClient(
-  "https://YOUR_PROJECT_ID.supabase.co",
-  "YOUR_PUBLIC_ANON_KEY"
+  "https://vvwqeworuhpfifroimsa.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ2d3Fld29ydWhwZmlmcm9pbXNhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYyNTUxODAsImV4cCI6MjA3MTgzMTE4MH0.dMIs24YrAPybu1-2k4tCIiNqU_EIb9lFXoIhobXNUkI"
 );
 
 export default function Contact() {
@@ -17,6 +16,21 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus(""); // clear previous status
+
+    // Basic validation
+    if (!form.name || !form.email || !form.message) {
+      setStatus("❌ All fields are required.");
+      return;
+    }
+
+    // Email format check
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(form.email)) {
+      setStatus("❌ Please enter a valid email address.");
+      return;
+    }
+
     setStatus("Sending...");
 
     const { error } = await supabase.from("contacts").insert([form]);
@@ -29,6 +43,7 @@ export default function Contact() {
       setForm({ name: "", email: "", message: "" });
     }
   };
+
 
   return (
     <section id="contact" className="bg-[#0D1B2A] text-white mx-auto px-6 py-20 text-center h-screen snap-center flex flex-col justify-center items-center">
