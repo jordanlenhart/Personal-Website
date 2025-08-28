@@ -20,14 +20,14 @@ export default function Contact() {
 
     // Basic validation
     if (!form.name || !form.email || !form.message) {
-      setStatus("❌ All fields are required.");
+      setStatus("All fields are required.");
       return;
     }
 
     // Email format check
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(form.email)) {
-      setStatus("❌ Please enter a valid email address.");
+      setStatus("Please enter a valid email address.");
       return;
     }
 
@@ -37,9 +37,9 @@ export default function Contact() {
 
     if (error) {
       console.error(error);
-      setStatus("❌ Error sending message. Please try again.");
+      setStatus("Error sending message. Please try again.");
     } else {
-      setStatus("✅ Message sent! Thank you.");
+      setStatus("Message sent! I'll get back to you soon.");
       setForm({ name: "", email: "", message: "" });
     }
   };
