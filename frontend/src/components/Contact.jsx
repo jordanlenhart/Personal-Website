@@ -16,15 +16,13 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus(""); // clear previous status
+    setStatus("");
 
-    // Basic validation
     if (!form.name || !form.email || !form.message) {
       setStatus("All fields are required.");
       return;
     }
 
-    // Email format check
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(form.email)) {
       setStatus("Please enter a valid email address.");
@@ -44,19 +42,26 @@ export default function Contact() {
     }
   };
 
-
   return (
-    <section id="contact" className="bg-[#0D1B2A] text-white mx-auto px-6 py-20 text-center h-screen snap-center flex flex-col justify-center items-center">
-      <h2 className="text-5xl font-bold mb-10">Leave A Message</h2>
+    <section
+      id="contact"
+      className="bg-[#0D1B2A] text-white flex flex-col justify-center items-center px-6 py-20 min-h-screen snap-center"
+    >
+      <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-10 text-center">
+        Leave A Message
+      </h2>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form
+        onSubmit={handleSubmit}
+        className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl flex flex-col gap-6"
+      >
         <input
           name="name"
           value={form.name}
           onChange={handleChange}
           placeholder="Your Name"
           required
-          className="w-full p-3 border rounded-xl"
+          className="w-full p-4 sm:p-5 md:p-6 border border-white rounded-xl text-lg sm:text-xl md:text-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
         />
         <input
           name="email"
@@ -65,26 +70,26 @@ export default function Contact() {
           onChange={handleChange}
           placeholder="Your Email"
           required
-          className="w-full p-3 border rounded-xl"
+          className="w-full p-4 sm:p-5 md:p-6 border border-white rounded-xl text-lg sm:text-xl md:text-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
         />
         <textarea
           name="message"
           value={form.message}
           onChange={handleChange}
           placeholder="Your Message"
-          rows="4"
+          rows="6"
           required
-          className="w-full p-3 border rounded-xl"
+          className="w-full p-4 sm:p-5 md:p-6 border border-white rounded-xl text-lg sm:text-xl md:text-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition resize-none"
         />
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white py-3 rounded-xl hover:bg-blue-600"
+          className="w-full bg-blue-500 text-white py-4 sm:py-5 md:py-6 rounded-xl text-lg sm:text-xl md:text-2xl hover:bg-blue-600 transition-all duration-300 transform hover:scale-105"
         >
           Send
         </button>
       </form>
 
-      {status && <p className="mt-4 text-gray-600">{status}</p>}
+      {status && <p className="mt-6 text-gray-400 text-center text-lg sm:text-xl">{status}</p>}
     </section>
   );
 }
