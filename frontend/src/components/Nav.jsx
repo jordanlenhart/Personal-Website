@@ -30,7 +30,7 @@ export default function Nav() {
   ];
 
   return (
-    <nav className="fixed w-full z-10 text-white pt-7 bg-[#0D1B2A]">
+    <nav className="fixed w-full z-10 text-white pt-7 ">
       <ul className="flex justify-center items-center font-semibold 
                      text-lg sm:text-xl md:text-xl lg:text-xl 
                      gap-4 sm:gap-6 md:gap-10 lg:gap-35 py-3 md:py-4 px-2 sm:px-6">
