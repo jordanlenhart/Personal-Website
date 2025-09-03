@@ -24,12 +24,16 @@ export default function Skills() {
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10">
         {skills.map((skill, index) => (
           <div
-            key={index}
-            className= "flex flex-col items-center p-6 rounded-2xl bg-white hover:scale-115"
-          >
-            <div className="text-6xl mb-3">{skill.icon}</div>
-            <p className="text-lg font-semibold">{skill.name}</p>
+          key={index}
+          className="flex flex-col items-center p-6 rounded-2xl bg-white transition-all duration-300 transform hover:scale-110 hover:-translate-y-2 hover:shadow-2xl hover:bg-gradient-to-r "
+        >
+          <div className="text-6xl mb-3 transition-transform duration-300 hover:scale-125 hover:text-blue-500">
+            {skill.icon}
           </div>
+          <p className="text-lg font-semibold">{skill.name}</p>
+        </div>
+        
+        
         ))}
       </div>
     </section>
