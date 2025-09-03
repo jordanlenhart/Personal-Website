@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <section
     id="hero"
-    className="h-screen snap-center flex flex-col md:flex-row justify-center items-center text-center md:text-left bg-[#0D1B2A] text-white md:gap-50 px-4 md:px-20"
+    className="h-screen snap-center flex flex-col md:flex-row justify-center items-center text-center md:text-left text-white md:gap-50 px-4 md:px-20"
 >
 
 <img
