@@ -5,12 +5,11 @@ import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 
-
 export default function App() {
   return (
-    <div className="font-sans bg-gray-50 text-gray-900 h-screen snap-y snap-mandatory overflow-y-scroll">
+    <div className="bg-[#0D1B2A] font-sans text-gray-900 h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth">
       <Nav />
-      <main className="">
+      <main>
         <Hero />
         <Skills />
         <Work />

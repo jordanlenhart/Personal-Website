@@ -45,7 +45,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-[#0D1B2A] text-white flex flex-col justify-center items-center px-6 py-20 min-h-screen snap-center"
+      className="text-white flex flex-col justify-center items-center px-6 min-h-screen snap-center sm:pt-5 md:pt-0"
     >
       <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-10 text-center">
         Leave A Message
