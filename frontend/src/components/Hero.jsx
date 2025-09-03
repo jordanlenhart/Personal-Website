@@ -9,11 +9,25 @@ export default function Hero() {
     className="h-screen snap-center flex flex-col md:flex-row justify-center items-center text-center md:text-left text-white md:gap-50 px-4 md:px-20"
 >
 
-<img
+<div className="relative flex justify-center items-center">
+  {/* Backglow */}
+  <div
+    className="absolute top-1/2 left-1/2 w-[350px] h-[350px] rounded-3xl -translate-x-1/2 -translate-y-1/2"
+    style={{
+      background:
+        'radial-gradient(circle, rgba(33, 158, 188) 0%, rgba(33, 158, 188) 50%, rgba(33, 158, 188) 100%)',
+      filter: 'blur(200px)',
+    }}
+  />
+  
+  {/* Profile image */}
+  <img
     src={Kazuma}
     alt="Jordan PFP"
-    className="w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 rounded-3xl object-cover"
-/>
+    className="w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 rounded-3xl object-cover relative z-10"
+  />
+</div>
+
 
 <div className="flex flex-col items-center md:items-center gap-4">
 
