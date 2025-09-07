@@ -28,7 +28,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen flex flex-col justify-center items-center px-6 sm:px-12 lg:px-20 pt-20 md:pt-0"
+      className="h-[60em] md:h-[75em] flex flex-col justify-center items-center px-6 sm:px-12 lg:px-20 pt-20 md:pt-0"
     >
       <h2 className="text-white text-5xl font-bold text-center mb-12">Projects</h2>
 

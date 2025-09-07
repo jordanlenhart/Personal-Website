@@ -44,7 +44,7 @@ export default function Work() {
   return (
     <section
       id="work"
-      className="min-h-screen snap-center flex flex-col justify-center items-center px-6 pt-20 md:pt-0"
+      className="h-[60em] md:h-[75em] snap-center flex flex-col justify-center items-center px-6 pt-20 md:pt-0"
     >
       <h2 className="text-white text-5xl font-bold text-center mb-16">Work</h2>
 

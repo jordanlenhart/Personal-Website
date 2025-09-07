@@ -18,7 +18,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="min-h-screen snap-center flex flex-col justify-center items-center text-center pt-20 md:pt-0"
+      className="h-[60em] md:h-[75em] flex flex-col justify-center items-center text-center"
     >
       <h2 className="text-5xl font-bold mb-10 text-white">Skills</h2>
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-10">
