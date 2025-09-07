@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <section
     id="hero"
-    className="h-screen snap-center flex flex-col md:flex-row justify-center items-center text-center md:text-left text-white md:gap-50 px-4 md:px-20"
+    className="h-[75em] snap-center flex flex-col md:flex-row justify-center items-center text-center md:text-left text-white md:gap-50 px-4 md:px-20"
 >
 
 <div className="relative flex justify-center items-center">
@@ -31,7 +31,7 @@ export default function Hero() {
 
 <div className="flex flex-col items-center md:items-center gap-4">
 
-                <h1 className="text-8xl font-bold mb-4">Jordan Lenhart</h1>
+                <h1 className="text-8xl text-center font-bold mb-4">Jordan Lenhart</h1>
                 <Typewriter
                 className="font-light text-xl sm:text-2xl md:text-3xl mb-4 md:mb-6 text-center md:text-left"
                     texts={[
