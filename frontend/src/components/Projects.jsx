@@ -28,7 +28,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen flex flex-col justify-center items-center px-6 sm:px-12 lg:px-20 sm:pt- md:pt-0"
+      className="min-h-screen flex flex-col justify-center items-center px-6 sm:px-12 lg:px-20 pt-20 md:pt-0"
     >
       <h2 className="text-white text-5xl font-bold text-center mb-12">Projects</h2>
 
@@ -38,11 +38,17 @@ export default function Projects() {
             key={i}
             className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition w-full"
           >
-            <img
-              src={p.screenshot}
-              alt={p.title}
-              className="w-full h-64 object-cover rounded-lg mb-3 text-center"
-            />
+            {/* Image or placeholder */}
+            {p.screenshot ? (
+              <img
+                src={p.screenshot}
+                alt={p.title}
+                className="w-full h-64 object-cover rounded-lg mb-3"
+              />
+            ) : (
+              <div className="w-full h-64 bg-gray-100 rounded-lg mb-3" />
+            )}
+
 
             <h3 className="font-semibold text-xl mb-2">{p.title}</h3>
             <p className="text-gray-600 mb-4">{p.desc}</p>
@@ -54,7 +60,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                  View GitHub Repo →
+                  GitHub Repo ➡
                 </a>
               )}
               {p.demo && (
@@ -64,7 +70,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                  See Live Demo →
+                  Live Demo ➡
                 </a>
               )}
             </div>
