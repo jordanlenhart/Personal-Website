@@ -24,7 +24,7 @@ export default function Hero() {
   <img
     src={Kazuma}
     alt="Jordan PFP"
-    className="w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 rounded-3xl object-cover relative z-10"
+    className="w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 rounded-3xl object-cover relative"
   />
 </div>
 

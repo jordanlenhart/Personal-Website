@@ -23,7 +23,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen snap-center flex flex-col justify-center items-center px-6 sm:px-12 lg:px-20 sm:pt-5 md:pt-0"
+      className="min-h-screen scroll-mt-20 snap-center flex flex-col justify-center items-center px-6 sm:px-12 lg:px-20 sm:pt-5 md:pt-0"
     >
       <h2 className="text-white text-5xl font-bold text-center mb-12">Projects</h2>
 
