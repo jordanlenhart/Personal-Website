@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <section
     id="hero"
-    className="h-[75em] snap-center flex flex-col md:flex-row justify-center items-center text-center md:text-left text-white md:gap-50 px-4 md:px-20"
+    className="h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left text-white md:gap-50"
 >
 
 <div className="relative flex justify-center items-center">
