@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div className="bg-[#0D1B2A] font-sans text-gray-900">
       <Nav />
-      <main>
+      <main className="">
         <FadeSection>
           <Hero />
         </FadeSection>
