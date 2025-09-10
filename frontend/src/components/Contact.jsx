@@ -45,7 +45,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="text-white flex flex-col justify-center items-center px-6 min-h-screen snap-center h-[60em] md:h-[75em]"
+      className="text-white flex flex-col justify-center items-center px-6 min-h-screen snap-center"
     >
       <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-10 text-center">
         Leave A Message
