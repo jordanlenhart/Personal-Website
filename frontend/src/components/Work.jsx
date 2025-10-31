@@ -5,6 +5,7 @@ import {
   SiSupabase,
   SiNodedotjs,
   SiPostgresql,
+  SiAirtable
 } from "react-icons/si";
 
 export default function Work() {
@@ -28,7 +29,7 @@ export default function Work() {
       company: "Prometheus",
       date: "September 2025 - Present",
       desc: "Worked with Penta Prosthetics as a pro-bono web developer, redesigning and deploying their ordering portal.",
-      tech: ["javascript", "react", "next.js", "airtable", "tailwind"],
+      tech: ["javascript", "react", "airtable", "tailwind"],
     },
   ];
 
@@ -39,6 +40,7 @@ export default function Work() {
     sql: <SiPostgresql size={24} color="#00758f" />,
     tailwind: <SiTailwindcss size={24} color="#38bdf8" />,
     supabase: <SiSupabase size={24} color="#4CAF50" />,
+    airtable: <SiAirtable size={24} color="#18bfff" />
   };
 
   return (

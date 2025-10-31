@@ -1,6 +1,6 @@
 import { FaReact, FaNodeJs, FaJs, FaGitAlt } from "react-icons/fa";
 import { RiSupabaseFill } from "react-icons/ri";
-import { SiSqlite, SiTypescript, SiTailwindcss  } from "react-icons/si";
+import { SiSqlite, SiTypescript, SiTailwindcss, SiAirtable  } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 
 export default function Skills() {
@@ -9,7 +9,7 @@ export default function Skills() {
     { name: "Supabase", icon: <RiSupabaseFill className="text-green-500" /> },
     { name: "Tailwind", icon: <SiTailwindcss className="text-blue-400" /> },
     { name: "PostgreSQL", icon: <BiLogoPostgresql className="text-blue-500" /> },
-    { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
+    { name: "Airtable", icon: <SiAirtable className="text-blue-300" /> },
     { name: "Git", icon: <FaGitAlt className="text-red-500" /> },
     { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
     { name: "TypeScript", icon: <SiTypescript className="text-green-800" /> },
