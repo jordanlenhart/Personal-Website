@@ -24,11 +24,11 @@ export default function Work() {
       tech: ["javascript", "sql"],
     },
     {
-      title: "Prometheus Contributor",
+      title: "Prometheus Pro-Bono Contributor",
       company: "Prometheus",
       date: "September 2025 - Present",
-      desc: "TBA",
-      tech: [],
+      desc: "Worked with Penta Prosthetics as a pro-bono web developer, redesigning and deploying their ordering portal.",
+      tech: ["javascript", "react", "next.js", "airtable", "tailwind"],
     },
   ];
 
